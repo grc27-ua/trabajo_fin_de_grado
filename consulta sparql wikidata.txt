@@ -1,0 +1,15 @@
+SELECT ?item ?itemLabel ?lat ?lon ?instanceOfLabel ?description WHERE {
+  ?item wdt:P131 wd:Q11959.   # Alicante ciudad
+  ?item wdt:P625 ?coord.
+  ?item wdt:P31 ?instanceOf.
+
+  BIND(geof:latitude(?coord) AS ?lat)
+  BIND(geof:longitude(?coord) AS ?lon)
+
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "es,en".
+    ?item rdfs:label ?itemLabel.
+    ?item schema:description ?description.
+    ?instanceOf rdfs:label ?instanceOfLabel.
+  }
+}

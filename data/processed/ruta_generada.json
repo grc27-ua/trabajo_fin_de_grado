@@ -1,0 +1,74 @@
+{
+  "transporte": "andando",
+  "duracion_maxima_min": 180,
+  "duracion_total_min": 171.9,
+  "numero_pois": 6,
+  "ruta": [
+    {
+      "wikidata_id": "Q4977239",
+      "nombre": "Monasterio de la Santa Faz",
+      "lat": 38.3895,
+      "lon": -0.442664,
+      "instance_of": "monasterio",
+      "descripcion": "monasterio en Alicante, municipio de la provincia de Alicante (España)",
+      "categoria_principal": "Edificios religiosos",
+      "es_cultural": true,
+      "descripcion_llm": "El Monasterio de la Santa Faz es un edificio religioso ubicado en Alicante, que ofrece una tranquila y espiritual experiencia al visitante. Allí se venera la sagrada reliquia de la frente de Jesús."
+    },
+    {
+      "wikidata_id": "Q61853176",
+      "nombre": "iglesia de la Santísima Cruz",
+      "lat": 38.364971,
+      "lon": -0.455304,
+      "instance_of": "iglesia",
+      "descripcion": "iglesia de Alicante",
+      "categoria_principal": "Edificios religiosos",
+      "es_cultural": true,
+      "descripcion_llm": "La Iglesia de la Santísima Cruz es un edificio religioso de gran interés en Alicante, conocido por su arquitectura y belleza. Ofrece una experiencia espiritual única con su magnífica fachada y ambiente interior tranquilo."
+    },
+    {
+      "wikidata_id": "Q61853178",
+      "nombre": "iglesia del Salvador",
+      "lat": 38.363133,
+      "lon": -0.473486,
+      "instance_of": "iglesia",
+      "descripcion": "iglesia de Alicante",
+      "categoria_principal": "Edificios religiosos",
+      "es_cultural": true,
+      "descripcion_llm": "La Iglesia del Salvador es una impresionante construcción religiosa en Alicante, conocida por su arquitectura y belleza. Ofrece un interior lleno de arte y devoción."
+    },
+    {
+      "wikidata_id": "Q61853174",
+      "nombre": "iglesia de la Inmaculada Concepción",
+      "lat": 38.357285,
+      "lon": -0.475341,
+      "instance_of": "iglesia",
+      "descripcion": "iglesia de Alicante",
+      "categoria_principal": "Edificios religiosos",
+      "es_cultural": true,
+      "descripcion_llm": "La Iglesia de la Inmaculada Concepción es un edificio religioso emblemático en Alicante, conocido por su arquitectura impresionante y su hermoso interior adornado con obras de arte."
+    },
+    {
+      "wikidata_id": "Q61853177",
+      "nombre": "iglesia del Buen Pastor",
+      "lat": 38.355341,
+      "lon": -0.478714,
+      "instance_of": "iglesia",
+      "descripcion": "iglesia de Alicante",
+      "categoria_principal": "Edificios religiosos",
+      "es_cultural": true,
+      "descripcion_llm": "La Iglesia del Buen Pastor es una hermosa construcción religiosa en Alicante, conocida por su arquitectura impresionante y ambiente tranquilo."
+    },
+    {
+      "wikidata_id": "Q61853324",
+      "nombre": "iglesia de San José",
+      "lat": 38.360139,
+      "lon": -0.480972,
+      "instance_of": "iglesia",
+      "descripcion": "iglesia en el barrio de Carolinas Altas, Alicante",
+      "categoria_principal": "Edificios religiosos",
+      "es_cultural": true,
+      "descripcion_llm": "Iglesia de San José se encuentra en el barrio de Carolinas Altas de Alicante. Es un edificio religioso de interés cultural."
+    }
+  ]
+}

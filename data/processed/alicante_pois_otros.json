@@ -1,0 +1,1046 @@
+[
+  {
+    "wikidata_id": "Q95265680",
+    "nombre": "Estación depuradora de aguas residuales Monte Orgegia",
+    "lat": 38.382889,
+    "lon": -0.465099,
+    "instance_of": "planta de tratamiento de aguas residuales",
+    "descripcion": "planta de tratamiento de aguas residuales",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q95266362",
+    "nombre": "Estación depuradora de aguas residuales Rincón de León",
+    "lat": 38.335225,
+    "lon": -0.523497,
+    "instance_of": "planta de tratamiento de aguas residuales",
+    "descripcion": "",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q99297686",
+    "nombre": "silo de Alicante",
+    "lat": 38.346861111,
+    "lon": -0.501611111,
+    "instance_of": "silo",
+    "descripcion": "edificio en Alicante, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q100309365",
+    "nombre": "Tángel",
+    "lat": 38.4097,
+    "lon": -0.468777777,
+    "instance_of": "pedanía",
+    "descripcion": "pedanía y partida rural del municipio de Alicante, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q100785585",
+    "nombre": "Asesinato de Miquel Grau",
+    "lat": 38.345830555,
+    "lon": -0.491111111,
+    "instance_of": "asesinato político",
+    "descripcion": "asesinato en España por motivos políticos",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q107738166",
+    "nombre": "Saladar de Aigua Amarga",
+    "lat": 38.288003537,
+    "lon": -0.527373696,
+    "instance_of": "saladar",
+    "descripcion": "saladar en Alicante/Alacant, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q107738166",
+    "nombre": "Saladar de Aigua Amarga",
+    "lat": 38.288003537,
+    "lon": -0.527373696,
+    "instance_of": "salina",
+    "descripcion": "saladar en Alicante/Alacant, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q57474784",
+    "nombre": "Pasaje Amérigo",
+    "lat": 38.34453,
+    "lon": -0.482594,
+    "instance_of": "pasaje comercial",
+    "descripcion": "pasaje comercial en Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q60625901",
+    "nombre": "Acuartelamiento \"Alférez Rojas Navarrete\"",
+    "lat": 38.37142,
+    "lon": -0.509539,
+    "instance_of": "cuartel",
+    "descripcion": "instalación militar en Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q64912219",
+    "nombre": "Monnegre-Cabeçó d'Or",
+    "lat": 38.46456164,
+    "lon": -0.48416772,
+    "instance_of": "entidad singular de población",
+    "descripcion": "",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q64912219",
+    "nombre": "Monnegre-Cabeçó d'Or",
+    "lat": 38.46456164,
+    "lon": -0.48416772,
+    "instance_of": "Entidades singulares y núcleos de población de Alicante",
+    "descripcion": "",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q65665522",
+    "nombre": "Cine Avenida",
+    "lat": 38.345433,
+    "lon": -0.484035,
+    "instance_of": "estructura arquitectónica desaparecida",
+    "descripcion": "antiguo cine de Alicante, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q66363063",
+    "nombre": "Tabarca",
+    "lat": 38.166172222,
+    "lon": -0.482133333,
+    "instance_of": "entidad singular de población",
+    "descripcion": "localidad española, ubicada en la isla homónima",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q66363063",
+    "nombre": "Tabarca",
+    "lat": 38.166172222,
+    "lon": -0.482133333,
+    "instance_of": "Entidades singulares y núcleos de población de Alicante",
+    "descripcion": "localidad española, ubicada en la isla homónima",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q67609079",
+    "nombre": "Casa Mediterráneo",
+    "lat": 38.337777777,
+    "lon": -0.493333333,
+    "instance_of": "consorcio",
+    "descripcion": "",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q72044789",
+    "nombre": "Centro de Competencia en digitalización IMPACT",
+    "lat": 38.384638888,
+    "lon": -0.513147222,
+    "instance_of": "organización sin fines de lucro",
+    "descripcion": "IMPACT es una organización sin ánimo de lucro que pretende hacer la digitalización de textos históricos impresos \"mejor, más rápida y más barata\"",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q73525945",
+    "nombre": "Antiguo Monasterio de Franciscanos",
+    "lat": 38.365376,
+    "lon": -0.491743,
+    "instance_of": "yacimiento arqueológico",
+    "descripcion": "restos de edificios en Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q73527820",
+    "nombre": "Chimenea de la calle de la Cerámica",
+    "lat": 38.384703,
+    "lon": -0.498807,
+    "instance_of": "chimenea",
+    "descripcion": "chimenea en Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q74193121",
+    "nombre": "Pozos de Garrigós",
+    "lat": 38.346499,
+    "lon": -0.480295,
+    "instance_of": "aljibe",
+    "descripcion": "depósitos de agua en Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q82776780",
+    "nombre": "Chimenea en la calle Escritor Dámaso Alonso de Alicante",
+    "lat": 38.345992,
+    "lon": -0.490689,
+    "instance_of": "chimenea",
+    "descripcion": "chimenea en Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q82776784",
+    "nombre": "Chimeneas en el km 3 de la carretera de Madrid de Alicante",
+    "lat": 38.348762,
+    "lon": -0.474618,
+    "instance_of": "chimenea",
+    "descripcion": "chimenea en Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q9073289",
+    "nombre": "San Agustín (Alicante)",
+    "lat": 38.36198333,
+    "lon": -0.49996111,
+    "instance_of": "característica geográfica",
+    "descripcion": "barrio de la ciudad de Alicante (España)",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q10879280",
+    "nombre": "Santa Faz",
+    "lat": 38.391161,
+    "lon": -0.4467707,
+    "instance_of": "Entidades singulares y núcleos de población de Alicante",
+    "descripcion": "localidad en el municipio de Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q11482271",
+    "nombre": "Albufereta",
+    "lat": 38.362861111,
+    "lon": -0.447805555,
+    "instance_of": "estanque artificial",
+    "descripcion": "barrio de Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q11915449",
+    "nombre": "Edificio en la calle de las Monjas, 2 y calle San Agustín, 6",
+    "lat": 38.346136111,
+    "lon": -0.481552777,
+    "instance_of": "construcción",
+    "descripcion": "convento de Alicante, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q14753645",
+    "nombre": "Instituto Alicantino de Cultura Juan Gil-Albert",
+    "lat": 38.343472222,
+    "lon": -0.486222222,
+    "instance_of": "organización",
+    "descripcion": "organismo público cultural de la provincia de Alicante, España.",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q14753688",
+    "nombre": "Casa Alberola Alicante, Curio Collection by Hilton",
+    "lat": 38.342323,
+    "lon": -0.486688,
+    "instance_of": "hotel",
+    "descripcion": "edificio de Alicante, España.",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q14755471",
+    "nombre": "Edificio La Adriática",
+    "lat": 38.344888888,
+    "lon": -0.483713888,
+    "instance_of": "habitat colectivo",
+    "descripcion": "edificio de Alicante, España.",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q15977195",
+    "nombre": "Lonja del Pescado (Alicante)",
+    "lat": 38.339039,
+    "lon": -0.48797,
+    "instance_of": "lonja de pescado",
+    "descripcion": "edificio de la ciudad de Alicante, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q126603",
+    "nombre": "Autovía del Mediterráneo",
+    "lat": 42.42444444,
+    "lon": 2.86583333,
+    "instance_of": "carretera",
+    "descripcion": "autovía de Algeciras a Barcelona",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q126603",
+    "nombre": "Autovía del Mediterráneo",
+    "lat": 42.42444444,
+    "lon": 2.86583333,
+    "instance_of": "autovía",
+    "descripcion": "autovía de Algeciras a Barcelona",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q3555926",
+    "nombre": "Lucentum",
+    "lat": 38.36444444,
+    "lon": -0.43833333,
+    "instance_of": "municipium",
+    "descripcion": "human settlement in Alicante, L'Alacantí, Alicante Province, Spain",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q3555926",
+    "nombre": "Lucentum",
+    "lat": 38.36444444,
+    "lon": -0.43833333,
+    "instance_of": "yacimiento arqueológico",
+    "descripcion": "human settlement in Alicante, L'Alacantí, Alicante Province, Spain",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q3555926",
+    "nombre": "Lucentum",
+    "lat": 38.36444444,
+    "lon": -0.43833333,
+    "instance_of": "ciudad antigua",
+    "descripcion": "human settlement in Alicante, L'Alacantí, Alicante Province, Spain",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q4725678",
+    "nombre": "Museo de Arte Contemporáneo de Alicante",
+    "lat": 38.34625,
+    "lon": -0.479694,
+    "instance_of": "prisión",
+    "descripcion": "museo de la ciudad de Alicante (España)",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q4725678",
+    "nombre": "Museo de Arte Contemporáneo de Alicante",
+    "lat": 38.34625,
+    "lon": -0.479694,
+    "instance_of": "granero",
+    "descripcion": "museo de la ciudad de Alicante (España)",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q4885479",
+    "nombre": "bombardeo del mercado central de Alicante",
+    "lat": 38.35,
+    "lon": -0.48333333,
+    "instance_of": "ataque aéreo",
+    "descripcion": "ataque aéreo en la guerra civil española",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q4891396",
+    "nombre": "Puerto de Alicante",
+    "lat": 38.33694444,
+    "lon": -0.48861111,
+    "instance_of": "puerto",
+    "descripcion": "Puerto en Alicante, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q5770640",
+    "nombre": "Ciudad Jardín (Alicante)",
+    "lat": 38.3774177,
+    "lon": -0.4962552,
+    "instance_of": "característica geográfica",
+    "descripcion": "",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q5770640",
+    "nombre": "Ciudad Jardín (Alicante)",
+    "lat": 38.373692,
+    "lon": -0.491981,
+    "instance_of": "característica geográfica",
+    "descripcion": "",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q5792466",
+    "nombre": "Cruz de los Caídos de Alicante",
+    "lat": 38.34335,
+    "lon": -0.488725,
+    "instance_of": "cruz de término",
+    "descripcion": "",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q5823088",
+    "nombre": "El Rebolledo",
+    "lat": 38.3425,
+    "lon": -0.611111111,
+    "instance_of": "Entidades singulares y núcleos de población de Alicante",
+    "descripcion": "localidad de España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q5861792",
+    "nombre": "San Gabriel",
+    "lat": 38.328833333,
+    "lon": -0.509333333,
+    "instance_of": "característica geográfica",
+    "descripcion": "barrio de Alicante, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q5863650",
+    "nombre": "Fontcalent",
+    "lat": 38.352305555,
+    "lon": -0.590386111,
+    "instance_of": "Entidades singulares y núcleos de población de Alicante",
+    "descripcion": "localidad del municipio de Alicante, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q5961915",
+    "nombre": "La Alcoraya",
+    "lat": 38.3814975,
+    "lon": -0.6244066,
+    "instance_of": "entidad singular de población",
+    "descripcion": "localidad española",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q5961915",
+    "nombre": "La Alcoraya",
+    "lat": 38.3814975,
+    "lon": -0.6244066,
+    "instance_of": "Entidades singulares y núcleos de población de Alicante",
+    "descripcion": "localidad española",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q6032851",
+    "nombre": "Muralla de Tabarca",
+    "lat": 38.166666666,
+    "lon": -0.466666666,
+    "instance_of": "muralla urbana",
+    "descripcion": "defensive Wall on the isle of Tabarca in Alicante, Spain",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q6101825",
+    "nombre": "Real Club de Regatas de Alicante",
+    "lat": 38.333333333,
+    "lon": -0.5,
+    "instance_of": "club náutico",
+    "descripcion": "club de remo de España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q6101825",
+    "nombre": "Real Club de Regatas de Alicante",
+    "lat": 38.333333333,
+    "lon": -0.5,
+    "instance_of": "club de remo",
+    "descripcion": "club de remo de España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q87069546",
+    "nombre": "Finca Morote y sistema de regadio de la Fuente y Balsa de Orgeja",
+    "lat": 38.38,
+    "lon": -0.458,
+    "instance_of": "explotación agraria",
+    "descripcion": "finca agrícola tradicional en Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q87069546",
+    "nombre": "Finca Morote y sistema de regadio de la Fuente y Balsa de Orgeja",
+    "lat": 38.38,
+    "lon": -0.458,
+    "instance_of": "conjunto monumental",
+    "descripcion": "finca agrícola tradicional en Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q87069547",
+    "nombre": "Fábrica Refinería la Británica-Campsa",
+    "lat": 38.354502,
+    "lon": -0.465347,
+    "instance_of": "refinería de petróleo",
+    "descripcion": "antiguas instalaciones industriales en Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q18008762",
+    "nombre": "Valle de Perputxent",
+    "lat": 38.8242,
+    "lon": -0.372847,
+    "instance_of": "valle",
+    "descripcion": "subcomarca de unos 50 km² incluida administrativamente en la comarca del Condado de Cocentaina, Alicante, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q19859559",
+    "nombre": "Cañada del Fenollar",
+    "lat": 38.3936504,
+    "lon": -0.5666397,
+    "instance_of": "entidad singular de población",
+    "descripcion": "human settlement in Alicante, L'Alacantí, Alicante Province, Spain",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q19859559",
+    "nombre": "Cañada del Fenollar",
+    "lat": 38.3936504,
+    "lon": -0.5666397,
+    "instance_of": "Entidades singulares y núcleos de población de Alicante",
+    "descripcion": "human settlement in Alicante, L'Alacantí, Alicante Province, Spain",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q8254541",
+    "nombre": "Cabo de las Huertas",
+    "lat": 38.36055556,
+    "lon": -0.42277778,
+    "instance_of": "península",
+    "descripcion": "cape in Valencian Community, Spain",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q8254541",
+    "nombre": "Cabo de las Huertas",
+    "lat": 38.36055556,
+    "lon": -0.42277778,
+    "instance_of": "cabo",
+    "descripcion": "cape in Valencian Community, Spain",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q8261202",
+    "nombre": "Campo de concentración de Los Almendros",
+    "lat": 38.3564,
+    "lon": -0.468272,
+    "instance_of": "campo de concentración",
+    "descripcion": "campo de concentración de la dictadura franquista (España)",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q8538974",
+    "nombre": "Serra Grossa de Alicante",
+    "lat": 38.3592,
+    "lon": -0.458611,
+    "instance_of": "sierra",
+    "descripcion": "montaña de España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q9031615",
+    "nombre": "Mercado Central de Alicante",
+    "lat": 38.34815278,
+    "lon": -0.48614444,
+    "instance_of": "mercado cubierto",
+    "descripcion": "mercado en Alicante (España)",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q48781453",
+    "nombre": "Sangueta",
+    "lat": 38.350633,
+    "lon": -0.472327,
+    "instance_of": "asentamiento de tipo urbano",
+    "descripcion": "",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q48817696",
+    "nombre": "Conjunto Histórico Artístico Isla de Tabarca",
+    "lat": 38.164456,
+    "lon": -0.474244,
+    "instance_of": "Conjunto histórico",
+    "descripcion": "bien de interés cultural",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q56596858",
+    "nombre": "Plaza Mar 2",
+    "lat": 38.35476775,
+    "lon": -0.471780257,
+    "instance_of": "centro comercial",
+    "descripcion": "centro comercial de la ciudad española de Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q56604811",
+    "nombre": "Muralla en el Paseo de Ramiro",
+    "lat": 38.34611,
+    "lon": -0.47871,
+    "instance_of": "muralla urbana",
+    "descripcion": "tramo de muralla en Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q57466305",
+    "nombre": "Chimeneas en la avenida Catedrático Soler",
+    "lat": 38.33908,
+    "lon": -0.49844,
+    "instance_of": "conjunto",
+    "descripcion": "elementos industriales en Alicante, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q19859732",
+    "nombre": "El Moralet",
+    "lat": 38.423886,
+    "lon": -0.578138,
+    "instance_of": "entidad singular de población",
+    "descripcion": "Entidad singular de población, Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q19859732",
+    "nombre": "El Moralet",
+    "lat": 38.423886,
+    "lon": -0.578138,
+    "instance_of": "Entidades singulares y núcleos de población de Alicante",
+    "descripcion": "Entidad singular de población, Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q19859822",
+    "nombre": "Verdegás",
+    "lat": 38.4048799,
+    "lon": -0.585964,
+    "instance_of": "Entidades singulares y núcleos de población de Alicante",
+    "descripcion": "pedanía de Alicante, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q22222889",
+    "nombre": "Avenida de Federico Soto",
+    "lat": 38.344843,
+    "lon": -0.489817,
+    "instance_of": "alameda",
+    "descripcion": "Avenida de Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q22260940",
+    "nombre": "Rambla de Méndez Núñez",
+    "lat": 38.345388888,
+    "lon": -0.483833333,
+    "instance_of": "rambla",
+    "descripcion": "calle de Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q22344577",
+    "nombre": "Avenida de Elche",
+    "lat": 38.329685,
+    "lon": -0.508461,
+    "instance_of": "vía pública",
+    "descripcion": "",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q23988092",
+    "nombre": "Punta de la Cala",
+    "lat": 38.35542,
+    "lon": -0.43486,
+    "instance_of": "península",
+    "descripcion": "",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q25714484",
+    "nombre": "El Bacarot",
+    "lat": 38.31906794,
+    "lon": -0.55679224,
+    "instance_of": "entidad singular de población",
+    "descripcion": "localidad de Alicante, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q25714484",
+    "nombre": "El Bacarot",
+    "lat": 38.319819444,
+    "lon": -0.5574,
+    "instance_of": "entidad singular de población",
+    "descripcion": "localidad de Alicante, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q25714484",
+    "nombre": "El Bacarot",
+    "lat": 38.31906794,
+    "lon": -0.55679224,
+    "instance_of": "pedanía",
+    "descripcion": "localidad de Alicante, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q25714484",
+    "nombre": "El Bacarot",
+    "lat": 38.319819444,
+    "lon": -0.5574,
+    "instance_of": "pedanía",
+    "descripcion": "localidad de Alicante, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q27921895",
+    "nombre": "Pla de la Vallonga",
+    "lat": 38.346188888,
+    "lon": -0.552338888,
+    "instance_of": "entidad singular de población",
+    "descripcion": "Polígono industrial de Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q27921895",
+    "nombre": "Pla de la Vallonga",
+    "lat": 38.346188888,
+    "lon": -0.552338888,
+    "instance_of": "Entidades singulares y núcleos de población de Alicante",
+    "descripcion": "Polígono industrial de Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q30255145",
+    "nombre": "Instituto Tecnológico de Producto Infantil y Ocio",
+    "lat": 38.617613,
+    "lon": -0.58531,
+    "instance_of": "organización sin fines de lucro",
+    "descripcion": "nonprofit organization in Alicante, Spain",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q30282066",
+    "nombre": "Vissum Ophthalmology Corporation",
+    "lat": 38.362835,
+    "lon": -0.461706,
+    "instance_of": "organización",
+    "descripcion": "organization in Alicante, Spain",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q42669853",
+    "nombre": "termas romanas de Lucentum",
+    "lat": 38.364381,
+    "lon": -0.437998,
+    "instance_of": "termas romanas",
+    "descripcion": "termas romanas",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q42669853",
+    "nombre": "termas romanas de Lucentum",
+    "lat": 38.364381,
+    "lon": -0.437998,
+    "instance_of": "estructura arquitectónica romana",
+    "descripcion": "termas romanas",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q42669853",
+    "nombre": "termas romanas de Lucentum",
+    "lat": 38.364381,
+    "lon": -0.437998,
+    "instance_of": "sitio arqueológico romano",
+    "descripcion": "termas romanas",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q42747818",
+    "nombre": "Urbanización La Rotonda",
+    "lat": 38.363938888,
+    "lon": -0.410588888,
+    "instance_of": "comunidad intencional",
+    "descripcion": "",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q43133006",
+    "nombre": "Castillo de Santa Bárbara",
+    "lat": 38.349036111,
+    "lon": -0.477997222,
+    "instance_of": "despoblado",
+    "descripcion": "bien de interés cultural",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q43146296",
+    "nombre": "Muralla Ibérica del Cerro de las Balsas",
+    "lat": 38.36488,
+    "lon": -0.445506,
+    "instance_of": "construcción",
+    "descripcion": "bien de interés cultural",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q47516264",
+    "nombre": "Autoridad Portuaria de Alicante",
+    "lat": 38.338004,
+    "lon": -0.48776,
+    "instance_of": "organismo público",
+    "descripcion": "organización gubernamental de España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q108934958",
+    "nombre": "Aigua Amarga watercourse",
+    "lat": 38.314944444,
+    "lon": -0.515833333,
+    "instance_of": "curso de agua",
+    "descripcion": "Watercourse from the city of Alacant",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q110933934",
+    "nombre": "Cap de les Hortes",
+    "lat": 38.35365,
+    "lon": -0.4206,
+    "instance_of": "área protegida de la red Natura 2000",
+    "descripcion": "área natural protegida de la Comunidad Valenciana",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q115475342",
+    "nombre": "Q115475342",
+    "lat": 38.345699141,
+    "lon": -0.484760043,
+    "instance_of": "organización",
+    "descripcion": "",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q115499001",
+    "nombre": "Alicante",
+    "lat": 38.348616,
+    "lon": -0.479395,
+    "instance_of": "vértice geodésico",
+    "descripcion": "vértice geodésico en Alicante/Alacant, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q115500858",
+    "nombre": "Cap de l'Horta",
+    "lat": 38.35643,
+    "lon": -0.41667,
+    "instance_of": "vértice geodésico",
+    "descripcion": "vértice geodésico en Alicante/Alacant, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q115503526",
+    "nombre": "Fontcalent",
+    "lat": 38.352336,
+    "lon": -0.59036,
+    "instance_of": "vértice geodésico",
+    "descripcion": "vértice geodésico en Alicante/Alacant, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q115509723",
+    "nombre": "Sanxo",
+    "lat": 38.315473,
+    "lon": -0.582684,
+    "instance_of": "vértice geodésico",
+    "descripcion": "vértice geodésico en Alicante/Alacant, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q115510952",
+    "nombre": "Urbanova",
+    "lat": 38.2825,
+    "lon": -0.5221,
+    "instance_of": "vértice geodésico",
+    "descripcion": "vértice geodésico en Alicante/Alacant, España",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q115607518",
+    "nombre": "Busot observatory",
+    "lat": 38.475838,
+    "lon": -0.444999999,
+    "instance_of": "observatorio astronómico",
+    "descripcion": "Astronomical observatory",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q115607582",
+    "nombre": "San Gabriel Observatory",
+    "lat": 38.329297,
+    "lon": -0.5169,
+    "instance_of": "observatorio astronómico",
+    "descripcion": "Astronomical observatory",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q115799726",
+    "nombre": "Agencia Valenciana de la Innovación",
+    "lat": 38.337972222,
+    "lon": -0.484472222,
+    "instance_of": "organismo público",
+    "descripcion": "Organismo público Agència Valenciana de la Innovació",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q115940223",
+    "nombre": "Q115940223",
+    "lat": 38.3019554,
+    "lon": -0.5626587,
+    "instance_of": "sierra",
+    "descripcion": "",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q117451153",
+    "nombre": "Puente Rojo",
+    "lat": 38.347940851,
+    "lon": -0.506957769,
+    "instance_of": "calzada elevada",
+    "descripcion": "Puente en Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q117477805",
+    "nombre": "Pasarela del Tío Farina",
+    "lat": 38.347488,
+    "lon": -0.48342,
+    "instance_of": "pasarela",
+    "descripcion": "",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q117557725",
+    "nombre": "Las Cigarreras (Alicante)",
+    "lat": 38.352947213,
+    "lon": -0.481182596,
+    "instance_of": "fábrica de tabaco",
+    "descripcion": "building of the former Tobacco Factory of Alicante (Spain)",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q117557725",
+    "nombre": "Las Cigarreras (Alicante)",
+    "lat": 38.352947213,
+    "lon": -0.481182596,
+    "instance_of": "Residencia creativa",
+    "descripcion": "building of the former Tobacco Factory of Alicante (Spain)",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q117777300",
+    "nombre": "Antigua Fábrica de Tabacos",
+    "lat": 38.3525,
+    "lon": -0.482777777,
+    "instance_of": "fábrica",
+    "descripcion": "edificio industrial en Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q117782368",
+    "nombre": "Grupo Escolar Mixto de la partida de Los Ángeles",
+    "lat": 38.363055555,
+    "lon": -0.4925,
+    "instance_of": "construcción",
+    "descripcion": "edificio en Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q117782512",
+    "nombre": "Muro del Raval Roig",
+    "lat": 38.346944444,
+    "lon": -0.476833333,
+    "instance_of": "muralla urbana",
+    "descripcion": "fortificación en Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q118120652",
+    "nombre": "Borgonesse",
+    "lat": 38.344537,
+    "lon": -0.483498,
+    "instance_of": "heladería",
+    "descripcion": "",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q118385042",
+    "nombre": "Aquemarropa",
+    "lat": 38.3450215,
+    "lon": -0.4870707,
+    "instance_of": "Residencia creativa",
+    "descripcion": "art residency",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q121028475",
+    "nombre": "Pavelló Florida Babel",
+    "lat": 38.340566556,
+    "lon": -0.507099303,
+    "instance_of": "instalación deportiva",
+    "descripcion": "sports venue",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q124471473",
+    "nombre": "Arrahma mosque",
+    "lat": 38.370840884,
+    "lon": -0.48807345,
+    "instance_of": "mezquita",
+    "descripcion": "mosque in Alicante",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q130044702",
+    "nombre": "Auditorio de la Concha de la Explanada",
+    "lat": 38.342881,
+    "lon": -0.48378,
+    "instance_of": "quiosco de música",
+    "descripcion": "",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q134288381",
+    "nombre": "La Ciudad Descubierta",
+    "lat": 38.345462,
+    "lon": -0.480846,
+    "instance_of": "yacimiento arqueológico",
+    "descripcion": "",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q134292283",
+    "nombre": "Subdelegación del Gobierno en Alicante",
+    "lat": 38.34497651,
+    "lon": -0.488311451,
+    "instance_of": "Subdelegación del Gobierno",
+    "descripcion": "",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q134296836",
+    "nombre": "Lonja de la Verdura (Alicante)",
+    "lat": 38.34971958,
+    "lon": -0.487339169,
+    "instance_of": "estacionamiento",
+    "descripcion": "",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q134296836",
+    "nombre": "Lonja de la Verdura (Alicante)",
+    "lat": 38.34971958,
+    "lon": -0.487339169,
+    "instance_of": "vegetable market",
+    "descripcion": "",
+    "categoria_principal": "Otros POIs culturales"
+  },
+  {
+    "wikidata_id": "Q134346639",
+    "nombre": "Monumento del pueblo de Alicante a la Constitución Española",
+    "lat": 38.346652623,
+    "lon": -0.484495846,
+    "instance_of": "arte urbano",
+    "descripcion": "",
+    "categoria_principal": "Otros POIs culturales"
+  }
+]

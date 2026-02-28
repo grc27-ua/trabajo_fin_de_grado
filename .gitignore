@@ -1,0 +1,19 @@
+# Entorno virtual
+venv/
+.env/
+
+# Archivos generados
+__pycache__/
+*.pyc
+
+# Salidas y datos pesados
+output/
+data/raw/
+
+# Claves y configs locales
+*.env
+config_local.py
+
+# OS
+.DS_Store
+Thumbs.db
