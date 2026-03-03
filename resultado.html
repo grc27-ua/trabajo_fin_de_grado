@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ruta generada</title>
+</head>
+<body>
+
+<h1>Ruta generada</h1>
+
+<p><strong>Número de POIs:</strong> {{ num_pois }}</p>
+<p><strong>Duración estimada:</strong> {{ tiempo_total }} minutos</p>
+
+<div>
+    {{ mapa|safe }}
+</div>
+
+<br>
+<a href="/">Generar otra ruta</a>
+
+</body>
+</html>

@@ -1,10 +1,5 @@
 import json
-from pathlib import Path
 from geopy.distance import geodesic
-
-# Rutas
-INPUT_PATH = Path("data/processed/alicante_pois_culturales_descripcion.json")
-OUTPUT_PATH = Path("data/processed/ruta_generada.json")
 
 # Velocidades medias (km/h)
 VELOCIDADES = {
@@ -36,12 +31,10 @@ TIEMPO_VISITA = {
     "Otros POIs culturales": 30
 }
 
-
 def calcular_distancia_km(poi1, poi2):
     coord1 = (poi1["lat"], poi1["lon"])
     coord2 = (poi2["lat"], poi2["lon"])
     return geodesic(coord1, coord2).km
-
 
 def calcular_centro(pois):
     return (
@@ -56,10 +49,8 @@ def generar_ruta(pois, transporte, duracion_max_min, punto_inicio=None):
 
     # Elegir POI inicial
     if punto_inicio is not None:
-        # Se toma el POI más cercano al punto de inicio
         actual = min(pois, key=lambda p: geodesic(punto_inicio, (p["lat"], p["lon"])).km)
     else:
-        # Si no hay punto de inicio, usamos el centro de todos los POIs
         centro = calcular_centro(pois)
         actual = min(pois, key=lambda p: geodesic(centro, (p["lat"], p["lon"])).km)
 
@@ -69,7 +60,6 @@ def generar_ruta(pois, transporte, duracion_max_min, punto_inicio=None):
     restantes = [p for p in pois if p != actual]
 
     while restantes:
-        # POI más cercano al actual
         siguiente = min(
             restantes,
             key=lambda p: calcular_distancia_km(actual, p)
@@ -89,12 +79,7 @@ def generar_ruta(pois, transporte, duracion_max_min, punto_inicio=None):
 
     return ruta, tiempo_total
 
-
 def eliminar_duplicados_por_categoria(pois):
-    """
-    Elimina POIs duplicados dentro de la misma categoría
-    (mismo wikidata_id en la misma categoria_principal)
-    """
     filtrados = []
     vistos = {}  # key: categoria_principal, value: set de wikidata_id
 
@@ -110,66 +95,3 @@ def eliminar_duplicados_por_categoria(pois):
             vistos[cat].add(wid)
 
     return filtrados
-
-
-def main():
-
-    print("=== GENERADOR DE RUTAS CULTURALES ===")
-
-    transporte = input("Tipo de transporte (andando | bicicleta | coche): ")
-    duracion_max = int(input("Duración máxima de la ruta (minutos): "))
-    categoria_seleccionada = input("Categoría principal: ")
-
-    # Punto de inicio opcional
-    usar_inicio = input("¿Quieres introducir punto de inicio? (s/n): ")
-
-    if usar_inicio.lower() == "s":
-        lat = float(input("Latitud: "))
-        lon = float(input("Longitud: "))
-        punto_inicio = (lat, lon)
-    else:
-        punto_inicio = None
-
-    with open(INPUT_PATH, "r", encoding="utf-8") as f:
-        todos = json.load(f)
-
-    pois = [
-        p for p in todos
-        if p.get("lat") and p.get("lon")
-        and (p.get("es_cultural") is True or p.get("es_cultural_llm") == "CULTURAL")
-        and p.get("categoria_principal") == categoria_seleccionada
-    ]
-
-    pois = eliminar_duplicados_por_categoria(pois)
-
-    if len(pois) < 2:
-        print("No hay suficientes POIs para generar una ruta.")
-        return
-
-    ruta, tiempo_total = generar_ruta(
-        pois,
-        transporte,
-        duracion_max,
-        punto_inicio
-    )
-
-    resultado = {
-        "transporte": transporte,
-        "duracion_maxima_min": duracion_max,
-        "duracion_total_min": round(tiempo_total, 1),
-        "numero_pois": len(ruta),
-        "ruta": ruta
-    }
-
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-
-    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
-        json.dump(resultado, f, ensure_ascii=False, indent=2)
-
-    print("\n=== RESULTADO ===")
-    print(f"Ruta generada con {len(ruta)} POIs")
-    print(f"Duración total estimada: {round(tiempo_total, 1)} minutos")
-    print("Archivo generado:", OUTPUT_PATH)
-
-if __name__ == "__main__":
-    main()

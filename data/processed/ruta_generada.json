@@ -1,31 +1,9 @@
 {
   "transporte": "andando",
-  "duracion_maxima_min": 180,
-  "duracion_total_min": 171.9,
-  "numero_pois": 6,
+  "duracion_maxima_min": 220,
+  "duracion_total_min": 214.5,
+  "numero_pois": 11,
   "ruta": [
-    {
-      "wikidata_id": "Q4977239",
-      "nombre": "Monasterio de la Santa Faz",
-      "lat": 38.3895,
-      "lon": -0.442664,
-      "instance_of": "monasterio",
-      "descripcion": "monasterio en Alicante, municipio de la provincia de Alicante (España)",
-      "categoria_principal": "Edificios religiosos",
-      "es_cultural": true,
-      "descripcion_llm": "El Monasterio de la Santa Faz es un edificio religioso ubicado en Alicante, que ofrece una tranquila y espiritual experiencia al visitante. Allí se venera la sagrada reliquia de la frente de Jesús."
-    },
-    {
-      "wikidata_id": "Q61853176",
-      "nombre": "iglesia de la Santísima Cruz",
-      "lat": 38.364971,
-      "lon": -0.455304,
-      "instance_of": "iglesia",
-      "descripcion": "iglesia de Alicante",
-      "categoria_principal": "Edificios religiosos",
-      "es_cultural": true,
-      "descripcion_llm": "La Iglesia de la Santísima Cruz es un edificio religioso de gran interés en Alicante, conocido por su arquitectura y belleza. Ofrece una experiencia espiritual única con su magnífica fachada y ambiente interior tranquilo."
-    },
     {
       "wikidata_id": "Q61853178",
       "nombre": "iglesia del Salvador",
@@ -69,6 +47,83 @@
       "categoria_principal": "Edificios religiosos",
       "es_cultural": true,
       "descripcion_llm": "Iglesia de San José se encuentra en el barrio de Carolinas Altas de Alicante. Es un edificio religioso de interés cultural."
+    },
+    {
+      "wikidata_id": "Q10975004",
+      "nombre": "iglesia de la Misericordia (Alicante)",
+      "lat": 38.351727,
+      "lon": -0.483578,
+      "instance_of": "iglesia",
+      "descripcion": "iglesia en Alicante, municipio de la provincia de Alicante (España)",
+      "categoria_principal": "Edificios religiosos",
+      "es_cultural": true,
+      "descripcion_llm": "La Iglesia de la Misericordia es un edificio religioso destacable en el centro histórico de Alicante, que ofrece una visión armoniosa de la arquitectura barroca valenciana."
+    },
+    {
+      "wikidata_id": "Q134319371",
+      "nombre": "Parroquia San Antonio de Padua",
+      "lat": 38.350862278,
+      "lon": -0.487580384,
+      "instance_of": "iglesia",
+      "descripcion": "",
+      "categoria_principal": "Edificios religiosos",
+      "es_cultural": true,
+      "descripcion_llm": "La Parroquia San Antonio de Padua es una hermosa iglesia ubicada en el corazón de Alicante. Destaca por su arquitectura barroca y su magnífica fachada, adornada con detalles escultóricos. Visitarla es una experiencia cultural única que ofrece un ambiente tranquilo y espiritual."
+    },
+    {
+      "wikidata_id": "Q18046696",
+      "nombre": "ermita de la Santa Cruz",
+      "lat": 38.347821812,
+      "lon": -0.483227934,
+      "instance_of": "ermita",
+      "descripcion": "ermita de Alicante",
+      "categoria_principal": "Edificios religiosos",
+      "es_cultural": true,
+      "descripcion_llm": "La Ermita de la Santa Cruz es una pequeña capilla religiosa en Alicante, ubicada en el corazón de la ciudad. Ofrece un espacio tranquilo para reflexión y oración, con su sencillo pero hermoso diseño."
+    },
+    {
+      "wikidata_id": "Q19367938",
+      "nombre": "Ermita de San Roque",
+      "lat": 38.3472,
+      "lon": -0.481706,
+      "instance_of": "ermita",
+      "descripcion": "ermita de Alicante",
+      "categoria_principal": "Edificios religiosos",
+      "es_cultural": true,
+      "descripcion_llm": "La Ermita de San Roque es una edificación religiosa en Alicante, conocida por su sencilla arquitectura y ambiente tranquilo. Ofrece un espacio para reflexión y contemplación."
+    },
+    {
+      "wikidata_id": "Q130259644",
+      "nombre": "Convento de San Agustín de Alicante",
+      "lat": 38.346555555,
+      "lon": -0.481805555,
+      "instance_of": "monasterio",
+      "descripcion": "",
+      "categoria_principal": "Edificios religiosos",
+      "es_cultural": true,
+      "descripcion_llm": "El Convento de San Agustín de Alicante es un antiguo monasterio perteneciente a la Orden de San Agustín, que data del siglo XVI y se encuentra en el corazón de la ciudad. Destaca por su arquitectura renacentista y barroca, con elementos como el claustro y la iglesia de estilo hermoso."
+    },
+    {
+      "wikidata_id": "Q83725709",
+      "nombre": "Monasterio de la Preciosísima Sangre",
+      "lat": 38.346174,
+      "lon": -0.481541,
+      "instance_of": "monasterio",
+      "descripcion": "convento de Alicante",
+      "categoria_principal": "Edificios religiosos",
+      "es_cultural": true,
+      "descripcion_llm": "El Monasterio de la Preciosísima Sangre es un edificio religioso de gran interés en Alicante, conocido por su arquitectura y ambiente tranquilo. Aquí se encuentra un convento que ofrece una visión única de la historia local."
+    },
+    {
+      "wikidata_id": "Q11915449",
+      "nombre": "Edificio en la calle de las Monjas, 2 y calle San Agustín, 6",
+      "lat": 38.346136111,
+      "lon": -0.481552777,
+      "instance_of": "convento",
+      "descripcion": "convento de Alicante, España",
+      "categoria_principal": "Edificios religiosos",
+      "es_cultural": true,
+      "descripcion_llm": "Convento histórico en las calles de Las Monjas y San Agustín, que ofrece una visión del pasado religioso de Alicante. Edificio religioso de gran interés cultural."
     }
   ]
 }

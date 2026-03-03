@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generador de Rutas Culturales</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+    <style>
+        body { font-family: Arial; margin: 40px; }
+        #map { height: 400px; margin-top: 20px; }
+        .form-section { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+<h1>Generador de Rutas Culturales</h1>
+
+<form action="/generar" method="post">
+
+    <div class="form-section">
+        <label><strong>Medio de transporte:</strong></label><br>
+        <select name="transporte">
+            <option value="andando">Andando</option>
+            <option value="bicicleta">Bicicleta</option>
+            <option value="coche">Coche</option>
+        </select>
+    </div>
+
+    <div class="form-section">
+        <label><strong>Tiempo máximo (minutos):</strong></label><br>
+        <input type="number" name="tiempo" value="120">
+    </div>
+
+    <div class="form-section">
+        <label><strong>Categorías (puedes elegir varias):</strong></label><br>
+        {% for cat in categorias %}
+            <input type="checkbox" name="categorias" value="{{cat}}">
+            {{cat}}<br>
+        {% endfor %}
+    </div>
+
+    <!-- Inputs ocultos -->
+    <input type="hidden" name="lat" id="lat">
+    <input type="hidden" name="lon" id="lon">
+
+    <div class="form-section">
+        <h3>Selecciona punto de inicio haciendo click en el mapa:</h3>
+        <div id="map"></div>
+    </div>
+
+    <button type="submit">Generar Ruta</button>
+
+</form>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+
+var map = L.map('map').setView([38.3452, -0.4810], 13);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap'
+}).addTo(map);
+
+var marker;
+
+map.on('click', function(e) {
+
+    if (marker) {
+        map.removeLayer(marker);
+    }
+
+    marker = L.marker(e.latlng).addTo(map);
+
+    document.getElementById("lat").value = e.latlng.lat;
+    document.getElementById("lon").value = e.latlng.lng;
+});
+
+</script>
+
+</body>
+</html>
