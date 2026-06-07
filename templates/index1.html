@@ -79,8 +79,8 @@
       width: 88px;
       height: 100px;
       border-radius:0;
-      border: none;
-      background: transparent;
+      border: 2px dashed rgba(255,255,255,0.35);
+      background: rgba(255,255,255,0.07);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -132,7 +132,7 @@
     /* Banda de descripción */
     .header-desc {
       background: var(--blue-mid);
-      padding: 1.5rem 1.5rem;
+      padding: 0.9rem 1.5rem;
       text-align: center;
     }
     .header-desc p {
@@ -507,12 +507,7 @@
 </header>
 
 <div class="header-desc">
-  <div style="max-width:800px; margin:0 auto; display:flex; align-items:center; gap:1.5rem;">
-    <p style="text-align:left; margin:0; flex:1;">Genera itinerarios culturales personalizados a partir de datos abiertos y descripciones enriquecidas con inteligencia artificial. Elige tus preferencias y deja que el sistema encuentre los lugares que merecen la pena conocer.</p>
-    <img src="{{ url_for('static', filename='imagenes/castillo-santa-barbara.jpg') }}"
-         alt="Castillo de Santa Bárbara, Alicante"
-         style="width:260px; height:160px; object-fit:cover; flex-shrink:0; display:block;">
-  </div>
+  <p>Genera itinerarios culturales personalizados a partir de datos abiertos y descripciones enriquecidas con inteligencia artificial. Elige tus preferencias y deja que el sistema encuentre los lugares que merecen la pena conocer.</p>
 </div>
 
 <!-- Spinner -->
@@ -621,7 +616,7 @@
         <div class="cat-grid">
           {% for cat in categorias %}
           <div class="cat-item">
-            <input type="checkbox" id="cat-{{ loop.index }}" name="categorias" value="{{ cat }}" />
+            <input type="checkbox" id="cat-{{ loop.index }}" name="categorias" value="{{ cat }}" checked />
             <label for="cat-{{ loop.index }}" class="cat-label">{{ cat }}</label>
           </div>
           {% endfor %}

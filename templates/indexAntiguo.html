@@ -1,84 +1,764 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Generador de Rutas Culturales</title>
-
-    <!-- Leaflet CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutas Culturales · Alicante</title>
+ 
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
-
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+ 
     <style>
-        body { font-family: Arial; margin: 40px; }
-        #map { height: 400px; margin-top: 20px; }
-        .form-section { margin-bottom: 20px; }
+        :root {
+            --cream: #F5F0E8;
+            --cream-dark: #EDE6D6;
+            --ink: #1A1612;
+            --ink-light: #4A4238;
+            --terracotta: #C1440E;
+            --terracotta-light: #D4612E;
+            --gold: #B8954A;
+            --border: #D4C9B0;
+        }
+ 
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--cream);
+            color: var(--ink);
+            min-height: 100vh;
+        }
+ 
+        /* ── HEADER ── */
+        header {
+            background-color: var(--ink);
+            padding: 0 48px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 68px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+ 
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            color: var(--cream);
+            letter-spacing: 0.04em;
+        }
+ 
+        .logo span {
+            color: var(--terracotta);
+        }
+ 
+        .header-tag {
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+        }
+ 
+        /* ── HERO ── */
+        .hero {
+            padding: 64px 48px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+ 
+        .hero-text {
+            padding-top: 8px;
+        }
+ 
+        .hero-label {
+            display: inline-block;
+            font-size: 0.68rem;
+            font-weight: 500;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--terracotta);
+            margin-bottom: 16px;
+            padding: 4px 10px;
+            border: 1px solid var(--terracotta);
+        }
+ 
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.4rem, 4vw, 3.6rem);
+            line-height: 1.1;
+            color: var(--ink);
+            margin-bottom: 20px;
+        }
+ 
+        h1 em {
+            font-style: italic;
+            color: var(--terracotta);
+        }
+ 
+        .hero-desc {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.7;
+            color: var(--ink-light);
+            max-width: 420px;
+        }
+ 
+        .hero-stats {
+            display: flex;
+            gap: 32px;
+            margin-top: 36px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+        }
+ 
+        .stat {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+ 
+        .stat-num {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--ink);
+            line-height: 1;
+        }
+ 
+        .stat-label {
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--ink-light);
+        }
+ 
+        /* ── MAP PREVIEW ── */
+        .map-preview {
+            position: relative;
+        }
+ 
+        .map-preview::before {
+            content: '';
+            position: absolute;
+            inset: -8px -8px 8px 8px;
+            border: 1px solid var(--border);
+            z-index: 0;
+            pointer-events: none;
+        }
+ 
+         #map-preview-img {
+            width: 100%;
+            height: 280px;
+
+           background-image: url("/static/imagenes/castillo-santa-barbara.jpg");
+            background-size: cover;
+            background-position: center;
+
+            border: 1px solid var(--border);
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+ 
+        /* ── FORM SECTION ── */
+        .form-wrapper {
+            max-width: 1200px;
+            margin: 56px auto 0;
+            padding: 0 48px 80px;
+        }
+ 
+        .form-divider {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+ 
+        .form-divider-line {
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+ 
+        .form-divider-text {
+            font-size: 0.68rem;
+            font-weight: 500;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--ink-light);
+        }
+ 
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2px;
+            background: var(--border);
+            border: 1px solid var(--border);
+            margin-bottom: 2px;
+        }
+ 
+        .form-cell {
+            background: var(--cream);
+            padding: 28px 32px;
+        }
+ 
+        .form-cell.full {
+            grid-column: 1 / -1;
+        }
+ 
+        .field-label {
+            font-size: 0.65rem;
+            font-weight: 500;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--terracotta);
+            margin-bottom: 12px;
+            display: block;
+        }
+ 
+        select, input[type="number"] {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1.5px solid var(--ink);
+            padding: 8px 0;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--ink);
+            appearance: none;
+            -webkit-appearance: none;
+            outline: none;
+            cursor: pointer;
+            transition: border-color 0.2s;
+        }
+ 
+        select:focus, input[type="number"]:focus {
+            border-bottom-color: var(--terracotta);
+        }
+ 
+        .select-wrapper {
+            position: relative;
+        }
+ 
+        .select-wrapper::after {
+            content: '↓';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.85rem;
+            color: var(--ink-light);
+            pointer-events: none;
+        }
+ 
+        /* ── CATEGORIAS ── */
+        .cats-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+ 
+        .cat-chip {
+            position: relative;
+        }
+ 
+        .cat-chip input[type="checkbox"] {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+ 
+        .cat-chip label {
+            display: inline-block;
+            padding: 6px 14px;
+            border: 1px solid var(--border);
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: var(--ink-light);
+            cursor: pointer;
+            transition: all 0.15s;
+            user-select: none;
+        }
+ 
+        .cat-chip input:checked + label {
+            background: var(--ink);
+            color: var(--cream);
+            border-color: var(--ink);
+        }
+ 
+        .cat-chip label:hover {
+            border-color: var(--terracotta);
+            color: var(--terracotta);
+        }
+ 
+        .cat-chip input:checked + label:hover {
+            background: var(--terracotta);
+            border-color: var(--terracotta);
+            color: var(--cream);
+        }
+ 
+        .cats-actions {
+            margin-top: 12px;
+            display: flex;
+            gap: 12px;
+        }
+ 
+        .cats-actions button {
+            background: none;
+            border: none;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.75rem;
+            color: var(--ink-light);
+            cursor: pointer;
+            padding: 0;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+ 
+        .cats-actions button:hover { color: var(--terracotta); }
+ 
+ 
+ 
+        /* ── TEMATICA ── */
+        .tematica-hint {
+            font-size: 0.72rem;
+            color: var(--ink-light);
+            margin-top: 6px;
+            line-height: 1.5;
+        }
+ 
+        .tematica-ejemplos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 8px;
+        }
+ 
+        .tematica-chip {
+            font-size: 0.68rem;
+            padding: 3px 10px;
+            border: 1px solid var(--border);
+            color: var(--ink-light);
+            cursor: pointer;
+            transition: all 0.15s;
+            background: transparent;
+            font-family: 'DM Sans', sans-serif;
+        }
+        .tematica-chip:hover {
+            border-color: var(--terracotta);
+            color: var(--terracotta);
+        }
+ 
+        /* ── GEO RESTRICTION ── */
+        .map-out-of-bounds {
+            display: none;
+            margin-top: 8px;
+            padding: 8px 12px;
+            background: #FEF2F2;
+            border: 1px solid #FECACA;
+            font-size: 0.78rem;
+            color: #B91C1C;
+        }
+        .map-out-of-bounds.visible { display: block; }
+ 
+        /* ── MAP INPUT ── */
+        .map-label-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 12px;
+        }
+ 
+        .map-hint {
+            font-size: 0.75rem;
+            color: var(--ink-light);
+        }
+ 
+        #map {
+            width: 100%;
+            height: 360px;
+            border: 1px solid var(--border);
+            outline: none;
+        }
+ 
+        .map-selected {
+            margin-top: 8px;
+            font-size: 0.78rem;
+            color: var(--ink-light);
+            min-height: 18px;
+            font-style: italic;
+        }
+ 
+        /* ── SUBMIT ── */
+        .submit-row {
+            background: var(--cream);
+            border: 1px solid var(--border);
+            border-top: none;
+            padding: 28px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+        }
+ 
+        .submit-note {
+            font-size: 0.78rem;
+            color: var(--ink-light);
+            max-width: 400px;
+            line-height: 1.5;
+        }
+ 
+        .btn-generate {
+            background: var(--terracotta);
+            color: var(--cream);
+            border: none;
+            padding: 14px 40px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+            white-space: nowrap;
+        }
+ 
+        .btn-generate:hover { background: var(--terracotta-light); }
+        .btn-generate:active { transform: scale(0.98); }
+ 
+        /* ── LOADING OVERLAY ── */
+        #loading-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(26, 22, 18, 0.85);
+            z-index: 9999;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+ 
+        #loading-overlay.active { display: flex; }
+ 
+        .loading-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: var(--cream);
+            font-style: italic;
+        }
+ 
+        .loading-sub {
+            font-size: 0.75rem;
+            font-weight: 300;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+        }
+ 
+        .loading-dots {
+            display: flex;
+            gap: 8px;
+        }
+ 
+        .loading-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--terracotta);
+            border-radius: 50%;
+            animation: bounce 1.2s infinite ease-in-out;
+        }
+ 
+        .loading-dot:nth-child(2) { animation-delay: 0.2s; }
+        .loading-dot:nth-child(3) { animation-delay: 0.4s; }
+ 
+        @keyframes bounce {
+            0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+            40% { transform: scale(1); opacity: 1; }
+        }
+ 
+        /* ── DECORATIVE ── */
+        .deco-line {
+            width: 1px;
+            height: 80px;
+            background: linear-gradient(to bottom, transparent, var(--border), transparent);
+            margin: 0 auto;
+        }
+ 
+        @media (max-width: 900px) {
+            .hero { grid-template-columns: 1fr; padding: 40px 24px 0; }
+            .map-preview { display: none; }
+            .form-grid { grid-template-columns: 1fr; }
+            .form-wrapper { padding: 0 24px 60px; }
+            header { padding: 0 24px; }
+            .submit-row { flex-direction: column; align-items: stretch; }
+        }
     </style>
 </head>
 <body>
-
-<h1>Generador de Rutas Culturales</h1>
-
-<form action="/generar" method="post">
-
-    <div class="form-section">
-        <label><strong>Medio de transporte:</strong></label><br>
-        <select name="transporte">
-            <option value="andando">Andando</option>
-            <option value="bicicleta">Bicicleta</option>
-            <option value="coche">Coche</option>
-        </select>
+ 
+<!-- Loading Overlay -->
+<div id="loading-overlay">
+    <div class="loading-dots">
+        <div class="loading-dot"></div>
+        <div class="loading-dot"></div>
+        <div class="loading-dot"></div>
     </div>
-
-    <div class="form-section">
-        <label><strong>Tiempo máximo (minutos):</strong></label><br>
-        <input type="number" name="tiempo" value="120">
+    <div class="loading-text">Trazando tu ruta cultural</div>
+    <div class="loading-sub">Esto puede tardar unos segundos</div>
+</div>
+ 
+<!-- Header -->
+<header>
+    <div class="logo">Rutas <span>Culturales</span> · Alicante</div>
+    <div class="header-tag">Explorador de patrimonio</div>
+</header>
+ 
+<!-- Hero -->
+<div class="hero">
+    <div class="hero-text">
+        <div class="hero-label">Descubre Alicante</div>
+        <h1>Tu ruta,<br><em>tu ritmo</em></h1>
+        <p class="hero-desc">
+            Genera itinerarios culturales personalizados a partir de datos abiertos
+            y descripciones enriquecidas con inteligencia artificial.
+            Elige tus preferencias y deja que el sistema encuentre los lugares que merece la pena conocer.
+        </p>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-num">+200</span>
+                <span class="stat-label">Puntos de interés</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num">19</span>
+                <span class="stat-label">Categorías</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num">3</span>
+                <span class="stat-label">Medios de transporte</span>
+            </div>
+        </div>
     </div>
-
-    <div class="form-section">
-        <label><strong>Categorías (puedes elegir varias):</strong></label><br>
-        {% for cat in categorias %}
-            <input type="checkbox" name="categorias" value="{{cat}}">
-            {{cat}}<br>
-        {% endfor %}
+ 
+    <div class="map-preview">
+        <div id="map-preview-img"></div>
     </div>
-
-    <!-- Inputs ocultos -->
-    <input type="hidden" name="lat" id="lat">
-    <input type="hidden" name="lon" id="lon">
-
-    <div class="form-section">
-        <h3>Selecciona punto de inicio haciendo click en el mapa:</h3>
-        <div id="map"></div>
+</div>
+ 
+<div class="deco-line" style="margin-top: 48px;"></div>
+ 
+<!-- Form -->
+<div class="form-wrapper">
+ 
+    <div class="form-divider">
+        <div class="form-divider-line"></div>
+        <div class="form-divider-text">Configura tu ruta</div>
+        <div class="form-divider-line"></div>
     </div>
-
-    <button type="submit">Generar Ruta</button>
-
-</form>
-
-<!-- Leaflet JS -->
+ 
+    <form action="/generar" method="post" id="route-form">
+ 
+        <div class="form-grid">
+ 
+            <!-- Transporte -->
+            <div class="form-cell">
+                <span class="field-label">Medio de transporte</span>
+                <div class="select-wrapper">
+                    <select name="transporte">
+                        <option value="andando">🚶 Andando</option>
+                        <option value="bicicleta">🚲 Bicicleta</option>
+                        <option value="coche">🚗 Coche</option>
+                    </select>
+                </div>
+            </div>
+ 
+            <!-- Tiempo -->
+            <div class="form-cell">
+                <span class="field-label">Duración máxima</span>
+                <input type="number" name="tiempo" value="120" min="30" max="480" placeholder="Minutos">
+                <div style="font-size:0.72rem; color: var(--ink-light); margin-top: 6px;">minutos</div>
+            </div>
+ 
+            <!-- Spacer -->
+            <div class="form-cell" style="display:flex; align-items:flex-end; justify-content:flex-end;">
+                <div style="text-align:right;">
+                    <div style="font-family:'Playfair Display',serif; font-size:0.85rem; font-style:italic; color:var(--ink-light); line-height:1.5;">
+                        "La cultura es el patrimonio<br>de todos"
+                    </div>
+                </div>
+            </div>
+ 
+ 
+            <!-- Temática (RAG) -->
+            <div class="form-cell full">
+                <span class="field-label">Temática <span style="font-weight:300; text-transform:none; letter-spacing:0; font-size:0.72rem; color:var(--ink-light);">(opcional)</span></span>
+                <input type="text" name="tematica" id="tematica" placeholder="Ej: guerra civil, estilo renacentista, arquitectura árabe..."
+                    style="width:100%; background:transparent; border:none; border-bottom:1.5px solid var(--ink); padding:8px 0; font-family:'DM Sans',sans-serif; font-size:1rem; color:var(--ink); outline:none;">
+                <p class="tematica-hint">
+                    El sistema seleccionará los puntos de interés más relacionados con esta temática
+                    dentro de las categorías que hayas elegido.
+                </p>
+                <div class="tematica-ejemplos">
+                    <button type="button" class="tematica-chip" onclick="setTematica(this)">Guerra Civil</button>
+                    <button type="button" class="tematica-chip" onclick="setTematica(this)">Arquitectura árabe</button>
+                    <button type="button" class="tematica-chip" onclick="setTematica(this)">Estilo renacentista</button>
+                    <button type="button" class="tematica-chip" onclick="setTematica(this)">Arte contemporáneo</button>
+                    <button type="button" class="tematica-chip" onclick="setTematica(this)">Edad Media</button>
+                    <button type="button" class="tematica-chip" onclick="setTematica(this)">Patrimonio marítimo</button>
+                </div>
+            </div>
+ 
+            <!-- Categorías -->
+            <div class="form-cell full">
+                <span class="field-label">Categorías de interés</span>
+                <div class="cats-grid" id="cats-grid">
+                    {% for cat in categorias %}
+                    <div class="cat-chip">
+                        <input type="checkbox" name="categorias" value="{{ cat }}" id="cat_{{ loop.index }}">
+                        <label for="cat_{{ loop.index }}">{{ cat }}</label>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="cats-actions">
+                    <button type="button" onclick="selectAll()">Seleccionar todas</button>
+                    <button type="button" onclick="deselectAll()">Limpiar selección</button>
+                </div>
+            </div>
+ 
+            <!-- Mapa -->
+            <div class="form-cell full">
+                <div class="map-label-row">
+                    <span class="field-label" style="margin-bottom:0;">Punto de inicio</span>
+                    <span class="map-hint">Haz clic en el mapa para fijar tu posición de salida</span>
+                </div>
+                <div id="map"></div>
+                <div class="map-selected" id="map-selected">Sin seleccionar — haz clic en el mapa</div>
+                <div class="map-out-of-bounds" id="map-out-of-bounds">⚠️ El punto seleccionado está fuera de Alicante capital. Por favor, elige un punto dentro de la ciudad.</div>
+            </div>
+ 
+        </div>
+ 
+        <!-- Inputs ocultos -->
+        <input type="hidden" name="lat" id="lat">
+        <input type="hidden" name="lon" id="lon">
+ 
+        <!-- Submit -->
+        <div class="submit-row">
+            <p class="submit-note">
+                La ruta se calculará optimizando el recorrido según tu medio de transporte
+                y los puntos de interés seleccionados dentro del tiempo indicado.
+            </p>
+            <button type="submit" class="btn-generate">Generar ruta →</button>
+        </div>
+ 
+    </form>
+</div>
+ 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
 <script>
-
-var map = L.map('map').setView([38.3452, -0.4810], 13);
-
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenStreetMap'
-}).addTo(map);
-
-var marker;
-
-map.on('click', function(e) {
-
-    if (marker) {
-        map.removeLayer(marker);
+    // ── Límites de Alicante capital (bounding box)
+    var ALICANTE_BOUNDS = L.latLngBounds(
+        L.latLng(38.290, -0.560),  // suroeste
+        L.latLng(38.410, -0.410)   // noreste
+    );
+ 
+    // Mapa de selección — restringido a Alicante
+    var map = L.map('map', { maxBounds: ALICANTE_BOUNDS, maxBoundsViscosity: 0.8 })
+               .setView([38.3452, -0.4810], 13);
+ 
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap'
+    }).addTo(map);
+ 
+    // Polígono visual de la zona permitida
+    L.rectangle(ALICANTE_BOUNDS, {
+        color: '#C1440E',
+        weight: 1.5,
+        opacity: 0.4,
+        fill: false,
+        dashArray: '6,4'
+    }).addTo(map);
+ 
+    function dentroDeAlicante(latlng) {
+        return ALICANTE_BOUNDS.contains(latlng);
     }
-
-    marker = L.marker(e.latlng).addTo(map);
-
-    document.getElementById("lat").value = e.latlng.lat;
-    document.getElementById("lon").value = e.latlng.lng;
-});
-
+ 
+    var marker;
+    map.on('click', function(e) {
+        var outMsg = document.getElementById('map-out-of-bounds');
+        var selMsg = document.getElementById('map-selected');
+ 
+        if (!dentroDeAlicante(e.latlng)) {
+            outMsg.classList.add('visible');
+            selMsg.textContent = 'Sin seleccionar — haz clic dentro del área marcada';
+            document.getElementById('lat').value = '';
+            document.getElementById('lon').value = '';
+            if (marker) { map.removeLayer(marker); marker = null; }
+            return;
+        }
+ 
+        outMsg.classList.remove('visible');
+        if (marker) map.removeLayer(marker);
+        marker = L.marker(e.latlng, {
+            icon: L.divIcon({
+                className: '',
+                html: '<div style="width:14px;height:14px;background:#C1440E;border:2px solid #1A1612;border-radius:50%;"></div>',
+                iconAnchor: [7, 7]
+            })
+        }).addTo(map);
+        document.getElementById('lat').value = e.latlng.lat;
+        document.getElementById('lon').value = e.latlng.lng;
+        selMsg.textContent = 'Punto seleccionado: ' + e.latlng.lat.toFixed(5) + ', ' + e.latlng.lng.toFixed(5);
+    });
+ 
+ 
+    function setTematica(btn) {
+        const input = document.getElementById('tematica');
+        input.value = btn.textContent;
+        input.focus();
+    }
+ 
+    // Categorías
+    function selectAll() {
+        document.querySelectorAll('#cats-grid input[type="checkbox"]').forEach(cb => cb.checked = true);
+    }
+    function deselectAll() {
+        document.querySelectorAll('#cats-grid input[type="checkbox"]').forEach(cb => cb.checked = false);
+    }
+ 
+    // Loading overlay
+    document.getElementById('route-form').addEventListener('submit', function(e) {
+        const lat = document.getElementById('lat').value;
+        const lon = document.getElementById('lon').value;
+        const cats = document.querySelectorAll('#cats-grid input:checked');
+        const tiempo = document.querySelector('input[name="tiempo"]').value;
+ 
+        if (!lat || !lon) {
+            e.preventDefault();
+            alert('Por favor, selecciona un punto de inicio en el mapa.');
+            return;
+        }
+        if (cats.length === 0) {
+            e.preventDefault();
+            alert('Por favor, selecciona al menos una categoría.');
+            return;
+        }
+        if (!tiempo || tiempo < 1) {
+            e.preventDefault();
+            alert('Por favor, introduce una duración válida.');
+            return;
+        }
+ 
+        document.getElementById('loading-overlay').classList.add('active');
+    });
 </script>
-
+ 
 </body>
 </html>
