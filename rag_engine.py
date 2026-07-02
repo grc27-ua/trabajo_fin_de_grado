@@ -12,7 +12,7 @@ import ollama
 
 # ── Configuración ──────────────────────────────────────────────────────────────
 EMBEDDING_MODEL = "mxbai-embed-large"
-LLM_MODEL       = "llama3.2"          # Modelo local para expandir la query
+LLM_MODEL       = "mistral"          # Modelo local para expandir la query
 INDEX_PATH      = Path("data/rag_index.faiss")
 META_PATH       = Path("data/rag_meta.pkl")
 # ──────────────────────────────────────────────────────────────────────────────

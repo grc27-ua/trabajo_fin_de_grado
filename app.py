@@ -72,7 +72,7 @@ def generar():
         pois = buscar_pois_por_tematica(
             tematica,
             pois_candidatos=pois,
-            top_k=30,
+            top_k=80,
             ollama_host=OLLAMA_HOST,
         )
 
